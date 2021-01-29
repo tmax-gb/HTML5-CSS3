@@ -52,7 +52,6 @@
 body{
     font-family: 'Montserrat','Roboto', sans-serif;
     font-weight: 300;
-    margin: 0 auto;
 }
 
 .container{
@@ -64,7 +63,6 @@ body{
     background-image: url(../image/bg_header.png);
     background-position: center;
     background-size: cover;
-    background-color: #555;
 }
 
 .header__inner{
@@ -103,9 +101,25 @@ body{
     padding-top: 54px;
     margin-left: 54px;
 }
+.user-nav-link{
+    text-decoration: none;
+}
+.user-nav-link+.user-nav-link{
+    margin-left: 30px;
+}
+.user-nav-link-img{
+    fill: #ffffff;
+    transition: 0.4s;
+}
+.user-nav-link-img:hover{
+    fill: #00BFF3;
+}
 
 .user-nav-link+.user-nav-link{
     margin-left: 30px;
+}
+.user-nav-link:hover{
+
 }
 
 .logo{
@@ -124,7 +138,7 @@ body{
     width: 40px;
     height: 70px;
     top: 35px;
-    left: -475px;
+    left: -415px;
     outline: none;
     background-color: transparent;
     border: none;
@@ -134,7 +148,7 @@ body{
     width: 40px;
     height: 70px;
     top: 35px;
-    right: -475px; 
+    right: -415px; 
     outline: none;
     background-color: transparent;
     border: none;
@@ -221,11 +235,11 @@ body{
     justify-content: center;
     position: relative;
     align-items: flex-end;
-    max-width: 270px;
+    /* max-width: 270px; */
 }
-/* .job+.job{
+.job+.job{
     margin-left: 29px;
-} */
+}
 .icon-svg{
     margin-bottom: 30px;
     display: block;
@@ -516,17 +530,17 @@ button, button:hover, button:active {
 }
 
 .presentation{
-    /* padding: 248px calc(50% - 1280px / 2) 145px; */
-    position: relative;
+    padding: 248px calc(50% - 1280px / 2) 145px;
+    /* position: relative;
     width: 1920px;
-    margin: 0 auto;
-    /* background-image: url(../image/poster.png);
+    margin: 0 auto; */
+    background-image: url(../image/poster.png);
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
 }
 .presentation-content{
-    position: absolute;
-    padding: 248px 675px 0 675px;
+    /* position: absolute;
+    padding: 248px 675px 0 675px; */
     text-align: center;
 }
 .presentation-btn{
@@ -691,17 +705,17 @@ button, button:hover, button:active {
     text-align: left;
     margin-bottom: 54px;
 }
-.posts__card{
+.post__card{
     border: 1px solid #f8f8f8;
     position: relative;
 }
-.posts__date{
+.post__date{
     position: absolute;
     top: 17px;
     left: 23px;
     text-align: center;
 }
-.posts__date-number{
+.post__date-number{
     width: 50px;
     height: 35px;
     background: #363636;
@@ -712,7 +726,7 @@ button, button:hover, button:active {
     color: #FFFFFF;
     padding: 1px 7px;
 }
-.posts__date-mounth{
+.post__date-mounth{
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -727,11 +741,11 @@ button, button:hover, button:active {
 /* .post__card + .post__card{
     margin-left: 85px;
 } */
-.posts__body{
+.post__body{
     padding-left: 23px;
     padding-bottom: 22px;
 }
-.posts__body-title{
+.post__body-title{
     font-family: 'Raleway';
     font-weight: 500;
     font-size: 20px;
@@ -740,7 +754,7 @@ button, button:hover, button:active {
     margin-top: 31px;
     margin-bottom: 22px;
 }
-.posts__body-text{
+.post__body-text{
     width: 311px;
     font-size: 14px;
     line-height: 22px;
@@ -748,7 +762,7 @@ button, button:hover, button:active {
     color: #000000;
     margin-bottom: 17px;
 }
-.posts__card-link{
+.post__card-link{
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
@@ -757,7 +771,7 @@ button, button:hover, button:active {
     position: relative;
     padding-right: 19px;
 }
-.posts__card-link::after{
+.post__card-link::after{
     content: "";
     position: absolute;
     top: 5px;
@@ -767,29 +781,29 @@ button, button:hover, button:active {
     border-right: 5px solid transparent;
     border-top: 5px solid transparent;
 }
-.posts__card:hover{
+.post__card:hover{
     background: #352F2D;
 }
 .card:hover .card__body::before{
     border-bottom: 10px solid #352F2D;
 
 }
-.posts__card:hover .posts__body-title{
+.post__card:hover .post__body-title{
     color: #C7B299;
 }
-.posts__card:hover .posts__body-text{
+.post__card:hover .post__body-text{
     color: #ffffff;
 }
-.posts__card:hover .card__img{
+.post__card:hover .card__img{
     filter: grayscale(100%);
 }
-.posts__card:hover .posts__date-number{
+.post__card:hover .post__date-number{
     background: #C7B199;
 }
-.posts__card:hover .posts__date-mounth{
+.post__card:hover .post__date-mounth{
     background: #A48D71;
 }
-.posts__btn{
+.post__btn{
     width: 22px;
     height: 22px;
     margin-right: 18px;
@@ -797,13 +811,13 @@ button, button:hover, button:active {
     background-color: transparent;
     border: none;
 }
-.posts-svg{
+.post-svg{
     width: 22px;
     height: 22px;
     margin-right: 18px;
     fill: #D1D1D1;
 }
-.posts-svg:hover{
+.post-svg:hover{
     fill: #C7B299;
 }
 .partners{
@@ -814,7 +828,6 @@ button, button:hover, button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #555;
 }
 .partners__item + .partners__item{
     margin-left: 75px;
@@ -826,7 +839,7 @@ button, button:hover, button:active {
     transform: scale(1.5);
 }
 .footer{
-    background-color: #191919;
+    background: #191919;
 }
 .footer__top{
     padding: 74px calc(50% - 1280px / 2) 146px;
@@ -998,7 +1011,7 @@ button, button:hover, button:active {
 .footer__top-widget-img{
     margin: 0 8px 9px 0;
     width: 45%;
-    transition: 0.4s;
+   transition: 0.4s;
 }
 .footer__top-widget-img:hover{
     transform: scale(1.25);
@@ -1006,7 +1019,7 @@ button, button:hover, button:active {
 
 .footer__bootom{
     padding: 58px calc(50% - 1280px / 2) 41px;
-    background-color: #101010;
+    background: #101010;
    
 }
 .footer__bootom-text{
