@@ -52,7 +52,6 @@
 body{
     font-family: 'Montserrat','Roboto', sans-serif;
     font-weight: 300;
-    margin: 0 auto;
 }
 
 .container{
@@ -103,11 +102,23 @@ body{
     padding-top: 54px;
     margin-left: 54px;
 }
+.user-nav-link{
+    text-decoration: none;
+}
+.user-nav-link+.user-nav-link{
+    margin-left: 30px;
+}
+.user-nav-link-img{
+    fill: #ffffff;
+    transition: 0.4s;
+}
+.user-nav-link-img:hover{
+    fill: #00BFF3;
+}
 
 .user-nav-link+.user-nav-link{
     margin-left: 30px;
 }
-
 .logo{
     padding-top: 39px;
 }
@@ -124,7 +135,8 @@ body{
     width: 40px;
     height: 70px;
     top: 35px;
-    left: -475px;
+
+    left: -415px;
     outline: none;
     background-color: transparent;
     border: none;
@@ -134,7 +146,7 @@ body{
     width: 40px;
     height: 70px;
     top: 35px;
-    right: -475px; 
+    right: -415px; 
     outline: none;
     background-color: transparent;
     border: none;
@@ -516,17 +528,17 @@ button, button:hover, button:active {
 }
 
 .presentation{
-    /* padding: 248px calc(50% - 1280px / 2) 145px; */
-    position: relative;
+    padding: 248px calc(50% - 1280px / 2) 145px;
+    /* position: relative;
     width: 1920px;
-    margin: 0 auto;
-    /* background-image: url(../image/poster.png);
+    margin: 0 auto; */
+    background-image: url(../image/poster.png);
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
 }
 .presentation-content{
-    position: absolute;
-    padding: 248px 675px 0 675px;
+    /* position: absolute;
+    padding: 248px 675px 0 675px; */
     text-align: center;
 }
 .presentation-btn{
@@ -1007,7 +1019,6 @@ button, button:hover, button:active {
 .footer__bootom{
     padding: 58px calc(50% - 1280px / 2) 41px;
     background-color: #101010;
-   
 }
 .footer__bootom-text{
     font-size: 13px;
