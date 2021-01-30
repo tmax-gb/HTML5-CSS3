@@ -63,6 +63,7 @@ body{
     background-image: url(../image/bg_header.png);
     background-position: center;
     background-size: cover;
+    background-color: #555;
 }
 
 .header__inner{
@@ -118,10 +119,6 @@ body{
 .user-nav-link+.user-nav-link{
     margin-left: 30px;
 }
-.user-nav-link:hover{
-
-}
-
 .logo{
     padding-top: 39px;
 }
@@ -138,6 +135,7 @@ body{
     width: 40px;
     height: 70px;
     top: 35px;
+
     left: -415px;
     outline: none;
     background-color: transparent;
@@ -235,11 +233,11 @@ body{
     justify-content: center;
     position: relative;
     align-items: flex-end;
-    /* max-width: 270px; */
+    max-width: 270px;
 }
-.job+.job{
+/* .job+.job{
     margin-left: 29px;
-}
+} */
 .icon-svg{
     margin-bottom: 30px;
     display: block;
@@ -705,17 +703,17 @@ button, button:hover, button:active {
     text-align: left;
     margin-bottom: 54px;
 }
-.post__card{
+.posts__card{
     border: 1px solid #f8f8f8;
     position: relative;
 }
-.post__date{
+.posts__date{
     position: absolute;
     top: 17px;
     left: 23px;
     text-align: center;
 }
-.post__date-number{
+.posts__date-number{
     width: 50px;
     height: 35px;
     background: #363636;
@@ -726,7 +724,7 @@ button, button:hover, button:active {
     color: #FFFFFF;
     padding: 1px 7px;
 }
-.post__date-mounth{
+.posts__date-mounth{
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -741,11 +739,11 @@ button, button:hover, button:active {
 /* .post__card + .post__card{
     margin-left: 85px;
 } */
-.post__body{
+.posts__body{
     padding-left: 23px;
     padding-bottom: 22px;
 }
-.post__body-title{
+.posts__body-title{
     font-family: 'Raleway';
     font-weight: 500;
     font-size: 20px;
@@ -754,7 +752,7 @@ button, button:hover, button:active {
     margin-top: 31px;
     margin-bottom: 22px;
 }
-.post__body-text{
+.posts__body-text{
     width: 311px;
     font-size: 14px;
     line-height: 22px;
@@ -762,7 +760,7 @@ button, button:hover, button:active {
     color: #000000;
     margin-bottom: 17px;
 }
-.post__card-link{
+.posts__card-link{
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
@@ -771,7 +769,7 @@ button, button:hover, button:active {
     position: relative;
     padding-right: 19px;
 }
-.post__card-link::after{
+.posts__card-link::after{
     content: "";
     position: absolute;
     top: 5px;
@@ -781,29 +779,29 @@ button, button:hover, button:active {
     border-right: 5px solid transparent;
     border-top: 5px solid transparent;
 }
-.post__card:hover{
+.posts__card:hover{
     background: #352F2D;
 }
 .card:hover .card__body::before{
     border-bottom: 10px solid #352F2D;
 
 }
-.post__card:hover .post__body-title{
+.posts__card:hover .posts__body-title{
     color: #C7B299;
 }
-.post__card:hover .post__body-text{
+.posts__card:hover .posts__body-text{
     color: #ffffff;
 }
-.post__card:hover .card__img{
+.posts__card:hover .card__img{
     filter: grayscale(100%);
 }
-.post__card:hover .post__date-number{
+.posts__card:hover .posts__date-number{
     background: #C7B199;
 }
-.post__card:hover .post__date-mounth{
+.posts__card:hover .posts__date-mounth{
     background: #A48D71;
 }
-.post__btn{
+.posts__btn{
     width: 22px;
     height: 22px;
     margin-right: 18px;
@@ -811,13 +809,13 @@ button, button:hover, button:active {
     background-color: transparent;
     border: none;
 }
-.post-svg{
+.posts-svg{
     width: 22px;
     height: 22px;
     margin-right: 18px;
     fill: #D1D1D1;
 }
-.post-svg:hover{
+.posts-svg:hover{
     fill: #C7B299;
 }
 .partners{
@@ -828,6 +826,7 @@ button, button:hover, button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #555;
 }
 .partners__item + .partners__item{
     margin-left: 75px;
@@ -839,7 +838,7 @@ button, button:hover, button:active {
     transform: scale(1.5);
 }
 .footer{
-    background: #191919;
+    background-color: #191919;
 }
 .footer__top{
     padding: 74px calc(50% - 1280px / 2) 146px;
@@ -1011,7 +1010,7 @@ button, button:hover, button:active {
 .footer__top-widget-img{
     margin: 0 8px 9px 0;
     width: 45%;
-   transition: 0.4s;
+    transition: 0.4s;
 }
 .footer__top-widget-img:hover{
     transform: scale(1.25);
@@ -1019,8 +1018,7 @@ button, button:hover, button:active {
 
 .footer__bootom{
     padding: 58px calc(50% - 1280px / 2) 41px;
-    background: #101010;
-   
+    background-color: #101010;
 }
 .footer__bootom-text{
     font-size: 13px;
